@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Proxy Error</title>
+    <meta name="googlebot" content="noindex, nofollow, nosnippet" />
+    <base href="/" />
+    <script src="/settings/theme.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XED28RN3H2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-XED28RN3H2');
+    </script>
+    
+  </head>
+
+  <body>
+    <div class="stars"></div> <!-- Stars div for background -->
+    <div class="shooting-stars"></div> <!-- Shooting stars div -->
+    <div class="desc left-margin">
+      <p>Please Register Service Worker Below And Reload The Page</p>
+      <p id="uv-error"></p>
+      <code id="uv-error-code"></code>
+      <button id="uv-register-sw" value="Register service worker">
+        Register ServiceWorker
+      </button>
+    </div>
+    <script src="stars.js"></script>
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script src="register-sw.js"></script>
+    <script src="error.js"></script>
+        <footer class="footer">
+          <div class="footer-links">
+          </div>
+        </footer>
+  </body>
+</html>
