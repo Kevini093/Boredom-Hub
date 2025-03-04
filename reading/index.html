@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boredom V2 - The best unblocked games for school students!</title>
+    <meta name="title" content="Boredom V1 - The best unblocked games for school students!">
+    <meta name="og:title" content="Boredom V1">
+    <meta name="description" content="Play the Best Free Unblocked Games Online - Perfect for School Students!">
+    <meta name="og:description" content="Free Unblocked Games for all bored in school!">
+    <script src="/settings/theme.js"></script>
+    <link rel="stylesheet" href="reading.css">
+    <link rel="stylesheet" href="/index.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2779999647710891"
+        crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XED28RN3H2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-XED28RN3H2');
+    </script>
+    <script src="reading.js"></script>
+</head>
+
+<body onload="displayRandomQuote()">
+    <nav class="navbar">
+        <a href="/" class="nav-brand" data-text="Boredom V2"><span>Boredom V2</span></a>
+        <div class="nav-links">
+            <a href="/" class="search-link" data-text="Search"><span>Search</span></a>
+            <a href="/games/" data-text="Games"><span>Games</span></a>
+            <a href="/chat/" data-text="Chat"><span>Chat</span></a>
+            <a href="/settings/" class="settings-link" data-text="Settings"><span>Settings</span></a>
+        </div>
+    </nav>
+
+    <div class="stars"></div> <!-- Stars div for background -->
+    <div class="shooting-stars"></div> <!-- Shooting stars div -->
+
+    <div class="content-wrapper">
+        <div class="proxy">
+            <iframe id="proxyIframe" width="100%" height="600px" frameborder="0"></iframe>
+        </div>
+    </div>
+    <div class="game-bar">
+        <button class="universal-button" onclick="toggleFullscreenPRX()">Fullscreen</button>
+        <button class="universal-button" onclick="refreshIframePRX()">Refresh</button>
+        <button class="universal-button" onclick="goBack()">Back</button>
+        <button class="universal-button" onclick="goForward()">Forward</button>
+    </div>
+
+    <script src="static/uv/uv.bundle.js"></script>
+    <script src="static/uv/uv.config.js"></script>
+    <script src="static/register-sw.js"></script>
+    <script src="/index.js"></script>
+    <script src="/stars.js"></script>
+    <script src="/gameloaders/options.js"></script>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const encodedUrl = urlParams.get('url');
+
+        if (encodedUrl) {
+            console.log("Encoded URL from query string:", encodedUrl);
+
+            const iframe = document.getElementById("proxyIframe");
+            iframe.src = encodedUrl;
+        } else {
+            console.error("No URL found in the query string.");
+        }
+    </script>
+</body>
+
+</html>
